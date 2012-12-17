@@ -27,11 +27,11 @@ public class RectangularFenceAutomaton implements Automaton {
     }
 
     public String[] getTransitionLabels() {
-
+        return null;
     }
 
     public Code[] getTransitionCodes() {
-        
+        return null;
     }
 
     public void transition(Code code) throws NoSuchTransitionException, TransitionException, FinishedAutomatonException {
@@ -43,35 +43,37 @@ public class RectangularFenceAutomaton implements Automaton {
     }
 
     public String getTooltip() {
-
+        return "";
     }
 
     public String getName() {
-
+        return "";
     }
 
     public ImageIcon getImageIcon() {
+        return null;
 
     }
 
     public ImageIcon getCursor() {
+        return null;
 
     }
 
     public boolean isEnabled(MapContext vc, ToolManager tm) {
-
+        return true;
     }
 
     public boolean isVisible(MapContext vc, ToolManager tm) {
-
+        return true;
     }
 
     public void toolFinished(MapContext vc, ToolManager tm) throws NoSuchTransitionException, TransitionException, FinishedAutomatonException {
-
+       
     }
 
     public Point getHotSpotOffset() {
-
+        return null;
     }
 
     public void update(Observable o, Object arg) {
