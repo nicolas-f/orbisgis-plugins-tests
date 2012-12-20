@@ -1,6 +1,7 @@
 package org.orbisgis.plugin.info;
 
 import org.orbisgis.view.geocatalog.ext.PopupMenu;
+import org.orbisgis.view.map.ext.MapEditorAction;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 /**
@@ -14,9 +15,10 @@ public class Activator implements BundleActivator {
          */
         @Override
         public void start(BundleContext bc) throws Exception {
-                bc.registerService(PopupMenu.class.getName(),
-                        new GeoCatalogMenuService(),
-                        null);
+                bc.registerService(PopupMenu.class,
+                        new GeoCatalogMenuService(), null);
+                bc.registerService(MapEditorAction.class,
+                        new MapEditorMenuService(), null);
         }
 
         /**
